@@ -122,3 +122,89 @@
 // }
 
 // mySort(arr)
+
+
+
+
+// function greenCart(resolve, refect) {
+//     console.log('Pading....');
+//     const randomNumber = Math.round(Math.random() *10)
+
+//     setTimeout(function (params) {
+//         if(randomNumber <= 5) {
+//             resolve(';)')
+//         }else {
+//             refect(':(')
+//         }
+
+//     }, 3000)
+
+// }
+
+// greenCart(
+//     function(resp) {
+//         alert(`by tikets ${resp}`)
+//     },
+//     function(resp) {
+//         alert(`try Again ${resp}`)
+//     }
+
+// ) 
+
+
+// console.log('1');
+// setTimeout(function (params) {
+//     console.log('2');
+// }, 3000)
+// console.log('3');
+
+//---------------------------
+
+// const arr = [54, 65, 21, 786, -1];
+// const result =[];
+// for(let i = 0; i < arr.length; i++) {
+//     result.push(arr[i] + 20)
+// }
+    
+// console.log(result);
+
+
+const user = [{
+    firstName: 'Davit',
+    lastName: 'Sargsyan' ,
+    age:22
+}, {
+    firstName: 'Araik',
+    lastName: 'Sargsyan' ,
+    age:65
+}, {
+    firstName: 'Hayk',
+    lastName: 'Sardaryan' ,
+    age:19
+}, {
+    firstName: 'Anna',
+    lastName: 'Abrahamyan' ,
+    age:30
+}, {
+    firstName: 'Andranik',
+    lastName: 'Manucharyan' ,
+    age:48
+}
+];
+
+// const result = user.filter(function(item) {
+//     const firstName = item.firstName.tolowerCase();
+//     const lastName = item.lastName.tolowerCase(); 
+//     if(firstName.includes)
+// })
+
+const result = user.filter(function(item) {
+    const firstName = item.firstName.tolowerCase();
+    const lastName = item.lastName.tolowerCase(); 
+    if(firstName.includes(key) || lastName.includes(key)) {
+        return item
+    }
+    
+});
+
+console.log(result, 'result');
